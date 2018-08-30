@@ -1,0 +1,32 @@
+{
+    "name": "newestapps/eee",
+    "license": "proprietary",
+    "version": "0.0.3",
+    "description": "End to End Encryption",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rodrigo Thiago Brun",
+            "email": "rodrigotbrun@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Newestapps\\Eee\\": "./"
+        },
+        "files": [
+            "./Helpers/eee.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newestapps\\Eee\\Providers\\NwEEEServiceProvider"
+            ],
+            "aliases": {
+                "Nw3e": "Newestapps\\Eee\\Facades\\Nw3e"
+            }
+        }
+    }
+}
